@@ -1,0 +1,2 @@
+import type { Product } from '../types'; import { ProductCard } from './ProductCard'
+export function ProductGrid({products,onAdd}:{products:Product[];onAdd:(p:Product,ids:string[],note:string)=>void}){return <div className="product-grid">{products.length?products.map(p=><ProductCard key={p.id} product={p} onAdd={onAdd}/>):<p className="empty-results">No encontramos productos con esa búsqueda.</p>}</div>}
