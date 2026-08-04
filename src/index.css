@@ -83,3 +83,25 @@ footer{padding:52px max(32px,calc((100vw - var(--content))/2)) 21px;display:grid
   .hero-restaurant .hero-caption p{color:#fff}
   .hero-restaurant .sticker{z-index:2;right:6vw;top:112px;background:#e85d2f}
 }
+/* Product card alignment refinements */
+.product-content > p{
+  min-height:54px
+}
+.product-actions{
+  margin-top:auto;
+  display:flex;
+  min-height:76px;
+  flex-direction:column
+}
+.customize,
+.customize-placeholder{
+  min-height:24px
+}
+.customize-placeholder{
+  display:block;
+  visibility:hidden;
+  margin:0 0 10px
+}
+.about > div > h2:first-child{
+  margin-top:0
+}
