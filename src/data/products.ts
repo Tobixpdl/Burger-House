@@ -1,7 +1,8 @@
 import type { Product, Extra } from '../types'
+import { publicAsset } from '../utils/publicAsset'
 const burgerExtras: Extra[] = [{ id: 'patty', name: 'Medallón adicional', price: 3000 }, { id: 'cheddar', name: 'Cheddar adicional', price: 1000 }, { id: 'bacon', name: 'Bacon', price: 1500 }, { id: 'egg', name: 'Huevo', price: 900 }, { id: 'onion', name: 'Cebolla caramelizada', price: 800 }]
 const friesExtras: Extra[] = [{ id: 'large-fries', name: 'Papas grandes', price: 1200 }, { id: 'extra-cheddar', name: 'Cheddar adicional', price: 900 }, { id: 'extra-bacon', name: 'Bacon', price: 1200 }]
-const img = (name: string) => `/products/${name}.png`
+const img = (name: string) => publicAsset(`products/${name}.png`)
 export const products: Product[] = [
  {id:'clasica',name:'Clásica',description:'Doble carne smash, cheddar, lechuga, tomate y salsa House.',price:9500,category:'Hamburguesas',image:img('smash-burger'),available:true,extras:burgerExtras},
  {id:'doble-cheddar',name:'Doble Cheddar',description:'Dos medallones, cheddar fundido, pepinos y salsa especial.',price:12500,category:'Hamburguesas',image:img('smash-burger'),available:true,extras:burgerExtras},
