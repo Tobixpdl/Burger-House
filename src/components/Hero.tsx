@@ -4,7 +4,7 @@ import { publicAsset } from '../utils/publicAsset'
 type Props = { onMenu: () => void; onOrder: () => void }
 
 export function Hero({ onMenu, onOrder }: Props) {
-  return <section id="inicio" className="hero">
+  return <section id="inicio" className="hero hero-restaurant">
     <div className="hero-copy" data-hero>
       <p className="eyebrow">Burger House · cocina de barrio</p>
       <h1>Smash burgers<br /><strong>hechas al momento.</strong></h1>
@@ -13,9 +13,9 @@ export function Hero({ onMenu, onOrder }: Props) {
       <div className="hero-note"><Flame size={16} aria-hidden="true" /><span>Plancha caliente de martes a domingo.</span></div>
     </div>
     <div className="hero-art">
-      <img src={publicAsset('products/smash-burger.png')} alt="Hamburguesa smash doble con papas fritas" fetchPriority="high" />
-      <div className="hero-caption"><span>01</span><p>Doble smash<br />con papas</p></div>
-      <div className="sticker">HECHO<br />AL MOMENTO</div>
+      <img src={publicAsset('hero-restaurant.png')} alt="Hamburguesa smash preparada dentro de una cocina de hamburguesería" fetchPriority="high" />
+      <div className="hero-caption"><span>01</span><p>Cocina de barrio<br />plancha encendida</p></div>
+      <div className="sticker">COCINA<br />ABIERTA</div>
     </div>
   </section>
 }

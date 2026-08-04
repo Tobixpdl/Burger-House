@@ -66,3 +66,20 @@ footer{padding:52px max(32px,calc((100vw - var(--content))/2)) 21px;display:grid
   .map-link{border-radius:999px}
   .whatsapp-float{border-radius:999px}
 }
+
+/* Hero de escritorio: la cocina y el producto ocupan toda la escena. */
+@media(min-width:681px){
+  .hero-restaurant{position:relative;display:block;min-height:660px;padding:0 6vw;overflow:hidden;background:#0b0b0a}
+  .hero-restaurant .hero-art{position:absolute;inset:0;width:100%;height:100%;min-height:0;margin:0;z-index:0;overflow:hidden}
+  .hero-restaurant .hero-art:before{inset:0;width:100%;height:100%;right:auto;bottom:auto;transform:none;background:linear-gradient(90deg,rgba(6,6,5,.97) 0%,rgba(6,6,5,.84) 31%,rgba(6,6,5,.27) 59%,rgba(6,6,5,.05) 100%)}
+  .hero-restaurant .hero-art:after{display:none}
+  .hero-restaurant .hero-art img{width:100%;height:100%;clip-path:none;object-position:center;filter:saturate(.92) contrast(1.06)}
+  .hero-restaurant .hero-copy{position:relative;z-index:2;max-width:590px;padding:175px 0 85px}
+  .hero-restaurant .hero-copy .eyebrow{color:#f49a77}
+  .hero-restaurant .hero-copy h1{font-size:clamp(65px,6vw,94px);text-shadow:0 5px 24px rgba(0,0,0,.35)}
+  .hero-restaurant .hero-copy h1 strong{color:#f06b3e}
+  .hero-restaurant .hero-lead,.hero-restaurant .hero-note{color:#d7cec3}
+  .hero-restaurant .hero-caption{z-index:2;left:auto;right:6vw;bottom:30px;text-align:right}
+  .hero-restaurant .hero-caption p{color:#fff}
+  .hero-restaurant .sticker{z-index:2;right:6vw;top:112px;background:#e85d2f}
+}
