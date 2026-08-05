@@ -144,3 +144,8 @@ body,
     grid-template-columns:19px minmax(0,1fr)
   }
 }
+@media(min-width:681px){
+  .category-rail{
+    padding-top:72px
+  }
+}
