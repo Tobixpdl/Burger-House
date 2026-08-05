@@ -1,6 +1,5 @@
 import { MessageCircle } from 'lucide-react'
 import { useMemo, useRef, useState } from 'react'
-import { Benefits } from './components/Benefits'
 import { CartDrawer } from './components/CartDrawer'
 import { CategoryFilters } from './components/CategoryFilters'
 import { CategoryRail } from './components/CategoryRail'
@@ -69,7 +68,6 @@ function App() {
 
       <main ref={root}>
         <Hero onMenu={menu} onOrder={order} />
-        <Benefits />
         <CategoryRail onChoose={chooseCategory} />
         <FeaturedProducts products={featured} onAdd={product => add(product, [], '')} onMenu={menu} />
         <DeliveryBanner onOrder={order} />
@@ -100,35 +98,6 @@ function App() {
         </section>
 
         <KitchenSection />
-
-        <section id="nosotros" className="about section" data-reveal>
-          <div>
-            <h2>Una cocina de barrio, sin demasiada vuelta.</h2>
-            <p>
-              Burger House es una cocina de barrio enfocada en hamburguesas smash, acompañamientos
-              simples y pedidos preparados al momento.
-            </p>
-            <p>
-              La idea es clara: hacer buena comida para pedir fácil, retirar cerca o recibir en
-              casa.
-            </p>
-          </div>
-
-          <aside>
-            <span className="about-label">DESDE LA COCINA</span>
-            <h3>Carne, pan y plancha.</h3>
-            <p>Una combinación simple que trabajamos en cada pedido antes de que salga.</p>
-            <div className="about-stats">
-              <span>
-                <b>SMASH</b>
-                al momento
-              </span>
-              <span>
-                <b>RETIRO</b>o envío
-              </span>
-            </div>
-          </aside>
-        </section>
 
         <LocationSection />
         {checkout && (
